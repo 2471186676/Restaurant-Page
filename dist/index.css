@@ -2,8 +2,11 @@ body{
     display: flex;
     flex-direction: row;
     background-color: rgb(195, 225, 226);
-    margin: 5% 25% 0 25%;
+    margin: 10px 25% 0 25%;
     box-shadow: 8.82px 12.14px 40px 4px rgba(0,0,0,0.3);
+    position: relative;
+    width: 480px;
+    
 }
 
 .heading{
@@ -40,4 +43,5 @@ li{
     height: auto;
     box-shadow: 8.82px 12.14px 40px 4px rgba(0,0,0,0.3);
     opacity: 90%;
+    margin-bottom: 5%;
 }
