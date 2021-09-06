@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(195, 225, 226);
+    margin: 5% 25% 0 25%;
+    box-shadow: 8.82px 12.14px 40px 4px rgba(0,0,0,0.3);
+}
+
+.heading{
+    background-color: rgb(202, 217, 218);
+    padding-left: 20px;
+    width: 10%;
+    padding-right: 2%;
+}
+
+.heading h1{
+    padding-right: 10px;
+}
+
+ul{
+    padding-left: 0px;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    padding-right: 50px;
+    padding-left: 2px;
+}
+
+.body{
+    background-color: rgb(202, 217, 218);
+    padding: 20px;
+}
+
+.body img{
+    object-fit: contain;
+    width: 95%;
+    height: auto;
+    box-shadow: 8.82px 12.14px 40px 4px rgba(0,0,0,0.3);
+    opacity: 90%;
+}
