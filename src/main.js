@@ -1,4 +1,4 @@
-//import img from './cafe.jpg';
+import img from './img/cafe.jpg';
 
 function createElement(type,class_name, content){
   const element = document.createElement(type);
@@ -16,9 +16,9 @@ function createImg(source){
   return elementing;
 }
 
-function createContent(){
+export default function createHome(){
   const content = document.createElement("div");
-  content.className = "body";
+  content.id = "content";
 
   content.appendChild(createImg("/src/img/cafe.jpg"));
 
@@ -34,12 +34,12 @@ function createContent(){
   people. The spending ability increased, and to cater for the demand of the people, “Bing Sat” started expanding their 
   variety of food, which eventually transformed into Modern Tea Diner (Cha Chaan Teng)`));
 
-  console.log(content)
+  console.log(1234);
 
   return content;
 }
+
+
   
-const body = document.body;
-  
-body.appendChild(createContent());
+
 

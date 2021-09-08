@@ -9,6 +9,15 @@ body{
     
 }
 
+button{
+    background-color: transparent;
+    box-shadow: none;
+    border:none;
+    padding: 0;
+    margin: 0;
+}
+
+
 .heading{
     background-color: rgb(202, 217, 218);
     padding-left: 20px;
@@ -32,16 +41,23 @@ li{
     padding-left: 2px;
 }
 
+li:hover{
+    background-color: tomato;
+}
+
 .body{
     background-color: rgb(202, 217, 218);
     padding: 20px;
 }
 
-.body img{
+#content img{
     object-fit: contain;
-    width: 95%;
+    width: 90%;
+    height: 90%;
+    padding: 5%;
     height: auto;
     box-shadow: 8.82px 12.14px 40px 4px rgba(0,0,0,0.3);
     opacity: 90%;
     margin-bottom: 5%;
+    background-color: #769495;
 }

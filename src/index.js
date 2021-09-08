@@ -1,4 +1,8 @@
-let buttons = document.querySelectorAll("button");
+import createHome from "./main";
+
+const content = document.getElementById("body");
+const buttons = document.querySelectorAll("button");
+
 buttons.forEach((button) =>{
     button.addEventListener('click', event => {
         changeTab(button);
@@ -6,5 +10,12 @@ buttons.forEach((button) =>{
 })
 
 function changeTab(element){
-    console.log(element.innerHTML);
+    createTab();
 }
+
+function createTab(){
+    content.innerHTML="";
+    const element = createHome();
+    content.appendChild(element);
+}
+
