@@ -1,26 +1,21 @@
-import img from './img/cafe.jpg';
-
 function createElement(type,class_name, content){
   const element = document.createElement(type);
   element.className = class_name;
-
   element.innerHTML = content;
-
   return element;
 }
 
 function createImg(source){
   const elementing = new Image()
-  elementing.src = img;
-
+  elementing.src = source;
   return elementing;
 }
 
-export default function createHome(){
+export function createHome(){
   const content = document.createElement("div");
-  content.id = "content";
+  content.id = "home";
 
-  content.appendChild(createImg("/src/img/cafe.jpg"));
+  content.appendChild(createImg("/img/cafe.jpg"));
 
   content.appendChild(createElement("p","", 
   `“Bing Sat” first started in Canton (Guangzhou) around 1950s to 1960s. “Bing Shi” used to only sell ice-cream, 
@@ -34,10 +29,10 @@ export default function createHome(){
   people. The spending ability increased, and to cater for the demand of the people, “Bing Sat” started expanding their 
   variety of food, which eventually transformed into Modern Tea Diner (Cha Chaan Teng)`));
 
-  console.log(1234);
-
   return content;
 }
+
+
 
 
   

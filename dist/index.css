@@ -2,10 +2,9 @@ body{
     display: flex;
     flex-direction: row;
     background-color: rgb(195, 225, 226);
-    margin: 10px 25% 0 25%;
     box-shadow: 8.82px 12.14px 40px 4px rgba(0,0,0,0.3);
     position: relative;
-    width: 480px;
+    min-height: 500px;
     
 }
 
@@ -15,6 +14,19 @@ button{
     border:none;
     padding: 0;
     margin: 0;
+}
+
+.space{
+    flex: 1;
+}
+
+.main_space{
+    display: flex;
+    flex-direction: row;
+    flex: 5;
+    background-color: #c9d8d9 ;
+    max-width: 600px;
+    box-shadow: 8.82px 12.14px 40px 4px rgba(0,0,0,0.3);
 }
 
 
@@ -50,7 +62,11 @@ li:hover{
     padding: 20px;
 }
 
-#content img{
+#body{
+    padding-bottom: 75px;
+}
+
+#home img{
     object-fit: contain;
     width: 90%;
     height: 90%;
@@ -60,4 +76,32 @@ li:hover{
     opacity: 90%;
     margin-bottom: 5%;
     background-color: #769495;
+}
+
+#menu{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+#menu p {
+    margin: 0 0 2px 0;
+    padding: 0;
+}
+
+#menu img{
+    margin: 0;
+    padding:0;
+    height: 100px;
+    width: 100px;
+    display: block;
+    border: 1px solid black;
+}
+
+
+
+#food{
+    height: 100px;
+    width: 20%;
+    padding: 50px;
 }
